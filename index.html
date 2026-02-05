@@ -5,28 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Крок 2: Фармація (1-150)</title>
     <style>
-        /* Password Screen */
-        #password-gate {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: var(--primary); color: white; display: flex;
-            flex-direction: column; align-items: center; justify-content: center;
-            z-index: 9999; text-align: center;
-        }
-        #password-gate input { padding: 15px; border-radius: 8px; border: none; width: 250px; margin: 15px; font-size: 1.1em; text-align: center; }
-        #password-gate button { padding: 12px 40px; border-radius: 30px; border: none; background: var(--accent); color: white; cursor: pointer; font-weight: bold; }
-        
-        /* Main Content (Hidden initially) */
-        #main-content { display: none; max-width: 800px; margin: 0 auto; }
-        .header { background: var(--primary); color: white; padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 20px; }
-        .sticky-stats { position: sticky; top: 10px; z-index: 100; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .progress-bar { height: 10px; background: #eee; border-radius: 5px; overflow: hidden; margin-top: 8px; }
-        #progress-fill { height: 100%; background: var(--accent); width: 0%; transition: width 0.3s; }
-        .question-box { background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 6px solid var(--primary); box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .answer-label { display: flex; align-items: center; padding: 12px; margin: 8px 0; border: 2px solid #f0f0f0; border-radius: 8px; cursor: pointer; }
-        .result-msg { margin-top: 10px; padding: 10px; border-radius: 6px; display: none; font-weight: bold; }
-        .correct-ui { background: #e8f5e9; color: var(--accent); }
-        .wrong-ui { background: #ffebee; color: var(--danger); }
-        .btn-finish { width: 100%; padding: 20px; background: var(--accent); color: white; border: none; border-radius: 40px; font-size: 1.2em; font-weight: bold; cursor: pointer; margin-bottom: 100px; }
+        border: none; border-radius: 40px; font-size: 1.2em; font-weight: bold; cursor: pointer; margin-bottom: 100px; }
         :root {
             --primary: #2c3e50;
             --accent: #27ae60;
@@ -142,13 +121,6 @@
     </style>
 </head>
 <body>
-<div id="password-gate">
-    <h2>🔐 Вхід обмежено</h2>
-    <p>Введіть пароль для доступу до Крок 2:</p>
-    <input type="password" id="pass-input" placeholder="Пароль">
-    <button onclick="checkPassword()">УВІЙТИ</button>
-    <p id="error-msg" style="color: #ff7675; margin-top: 10px; display: none;">Невірний пароль!</p>
-</div>
 <div class="container">
     <div class="header">
         <h1>Крок 2: Фармація</h1>
@@ -375,5 +347,6 @@ function finishExam() {
 </script>
 </body>
 </html>
+
 
 
